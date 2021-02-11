@@ -1,7 +1,11 @@
 Download the file from https://github.com/PowerShell/Win32-OpenSSH/releases
 Extract to C:\OpenSSH-Win64
+Add the path in environment variables
 
-open cmd as administrator 
+Give permision icacls C:\OpenSSH-Win64\libcrypto.dll /grant Everyone:RX
+
+
+open cmd as administrator  install-sshd.ps1
 
 Open powershell
 
@@ -74,3 +78,5 @@ PolicyStoreSourceType : Local
 
 
 PS C:\Windows\system32>
+
+src: https://www.saotn.org/manually-install-openssh-in-windows-server/
